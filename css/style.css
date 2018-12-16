@@ -1,0 +1,95 @@
+/* Overall styling */
+section {
+  margin: 5em 0;
+}
+
+h2 {
+  margin-bottom: 1em !important;
+}
+
+/* Navbar */
+.navbar-nav a {
+  margin-left: 1em;
+}
+
+#navbar {
+  background-color: rgba(248, 249, 250, 0.8) !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 100vh;
+  position: relative;
+}
+
+#title {
+  margin-top: 0;
+}
+
+.jumbotron div {
+  width: 35em;
+  margin: 8em 0 0 10em;
+}
+
+/* About */
+#aboutAnchor  {
+  position: absolute;
+  bottom: 0;
+}
+
+#about .col-md-2 {
+  border: 1px solid black;
+}
+
+#photo {
+  border-radius: 100%;
+}
+
+.col-sm-3, .col-sm-4 {
+  text-align: center;
+}
+
+.col-sm-3 img, .col-sm-4 img {
+  width: 100px;
+  height: 100px;
+}
+
+.technologies {
+  margin-top: 2em;
+}
+
+.technologies .img-fluid {
+  margin-bottom: 1em;
+}
+
+/* Projects */
+#projectsAnchor {
+  display: block;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects img {
+  width: 500px;
+  margin-bottom: 0.25em;
+}
+
+#projects h2, #contact h2 {
+  text-align: center;
+}
+
+/* Contact */
+
+#contact .container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+

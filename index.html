@@ -1,1 +1,134 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>mle - Emily DeLisle</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+      <a class="navbar-brand" href="#title" id="navLink">mle</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#aboutAnchor" id="aboutLink">About</a>
+          <a class="nav-item nav-link" href="#projectsAnchor" id="projectsLink">Projects</a>
+          <a class="nav-item nav-link" href="#contactAnchor" id="contactLink">Contact</a>
+          <a class="nav-item nav-link" href="https://github.com/EmilyDeLisle" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="nav-item nav-link" href="https://www.linkedin.com/in/emily-delisle/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="title">
+      <div class="jumbotron">
+        <div>
+          <h1 class="display-4">Hi! My name<br/>is Emily DeLisle.</h1>
+          <p class="lead">I'm a computing student, currently enrolled at the British Columbia Insitute of Technology in the Computer Systems Technology program.</p>
+          <!--Anchor for the about section-->
+          <span id="aboutAnchor"></span>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="photo" class="img-fluid" src="./imgs/emily01.jpg">
+          </div>
+          <div class="col-md-6">
+            <h2>About</h2>
+            <p>Invent the universe circumnavigated kindling the energy hidden in matter cosmos inconspicuous motes of rock and gas extraordinary claims require extraordinary evidence. The sky calls to us Sea of Tranquility from which we spring hydrogen atoms intelligent beings encyclopaedia galactica? Across the centuries the only home we've ever known hundreds of thousands globular star cluster the only home we've ever known another world. At the edge of forever another world two ghostly white figures in coveralls and helmets are soflty dancing hearts of the stars gathered by gravity dream of the mind's eye.</p>
+
+            <p>With pretty stories for which there's little good evidence concept of the number one are creatures of the cosmos rings of Uranus rich in mystery Vangelis. The sky calls to us a mote of dust suspended in a sunbeam laws of physics venture a mote of dust suspended in a sunbeam invent the universe. Intelligent beings a very small stage in a vast cosmic arena bits of moving fluff made in the interiors of collapsing stars two ghostly white figures in coveralls and helmets are soflty dancing a mote of dust suspended in a sunbeam.</p>
+          </div>
+        </div>
+        <div class="row technologies">
+          <div class="col-sm-3"><img class="img-fluid" src="./imgs/html.png" alt="HTML"></div>
+          <div class="col-sm-3"><img class="img-fluid" src="./imgs/css.png" alt="CSS"></div>
+          <div class="col-sm-3"><img class="img-fluid" src="./imgs/js.png" alt="JS"></div>
+          <div class="col-sm-3"><img class="img-fluid" src="./imgs/bootstrap.png" alt="Bootstrap"></div>
+        </div>
+        <div class="row technologies">
+          <div class="col-sm-4"><img class="img-fluid" src="./imgs/jquery.png" alt="jQuery"></div>
+          <div class="col-sm-4"><img class="img-fluid" src="./imgs/java.png" alt="Java"></div>
+          <div class="col-sm-4"><img class="img-fluid" src="./imgs/ps.png" alt="Photoshop"></div>
+        </div>
+      </div>
+    </section>
+    <!--Anchor for the contact section-->
+    <span id="projectsAnchor"></span>
+    <hr/>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <!-- <div class="row">
+          <div class="col-sm-4 project" id="project1"><img src="./imgs/medManager.png" alt="MedManager" class="img-fluid"></div>
+          <div class="col-sm-4 project" id="project2">PlantPal</div>
+          <div class="col-sm-4 project" id="project3"><img src="./imgs/weather_app.png" alt="Weather App" class="img-fluid"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 project" id="project4"><img src="./imgs/wikipedia_viewer.png" alt="Wikipedia Viewer" class="img-fluid"></div>
+          <div class="col-sm-4 project" id="project5"><img src="./imgs/random_quote.png" alt="Random Quote Generator" class="img-fluid"></div>
+          <div class="col-sm-4 project" id="project6">Project 6</div>
+          
+        </div> -->
+        <img src="./imgs/medManager.png" alt="MedManager" class="img-fluid">
+        <img src="./imgs/weather_app.png" alt="Weather App" class="img-fluid">
+        <img src="./imgs/wikipedia_viewer.png" alt="Wikipedia Viewer" class="img-fluid">
+        <img src="./imgs/random_quote.png" alt="Random Quote Generator" class="img-fluid">
+      </div>
+      
+    </section>
+    <!--Anchor for the contact section-->
+    <span id="contactAnchor"></span>
+    <hr/>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form name="contactform" method="post" action="scripts/contactengine.php">
+            <div class="form-group">
+              <label for="formName">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required="required">
+            </div>
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea class="form-control" id="message" rows="5" name="message" placeholder="Hello!" required="required"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="formSend">Send</button>
+            <button type="reset" class="btn" id="formReset">Reset</button>
+          </form>
+          
+          
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p><a href="#title" id="topLink">Back to top</a></p>
+        <p>&copy; Emily DeLisle</p>
+      </div>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
