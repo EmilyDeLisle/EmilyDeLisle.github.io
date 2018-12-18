@@ -51,7 +51,7 @@ hr.style-two {
 
 #navbar {
   background-color: rgba(50, 50, 50, 0.8) !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 1px !important;
   border-bottom: 3px solid #EA1E5B;
 }
 
@@ -148,10 +148,15 @@ hr.style-two {
   border: 1px solid black;
 }
 
+#photoColumn {
+  text-align: center;
+}
+
 #photo {
   border-radius: 100%;
   border: 5px solid #EA1E5B;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+  width: 20em;
 }
 
 .col-sm-3 img, .col-sm-4 img {
@@ -184,6 +189,20 @@ hr.style-two {
   display: none;
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #photo {
+    width: 30em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1200px) {
+  #photo {
+    width: 35em;
+  }
+}
+
 /* Projects */
 #projectsAnchor {
   display: block;
@@ -194,8 +213,10 @@ hr.style-two {
 }
 
 #projects img {
-  width: 500px;
+  width: 380px;
   margin-bottom: 0.25em;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+  border-radius: 7px;
 }
 
 #projects h2, #contact h2 {
@@ -208,10 +229,6 @@ hr.style-two {
 
 .col-lg-6 {
   margin-bottom: 2em;
-}
-
-#projects img {
-  border-radius: 7px;
 }
 
 .projectInfo {
@@ -231,10 +248,18 @@ hr.style-two {
   color: #EA1E5B;
   font-family: 'Leckerli One', cursive;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 18pt;
+}
+
+#projects p {
+  font-size: 10pt;
 }
 
 #projects button {
   transition: 0.4s;
+  font-size: 10pt;
+  margin: -0.8em 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
 }
 
 #projects button:hover {
@@ -242,16 +267,29 @@ hr.style-two {
   color: #FFF;
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #projects img {
+    width: 480px;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   div.container {
     padding: 0;
-    /* margin: 0; */
   }
 
-  #projects img {
-    width: 490px;
+  #projects h3 {
+    font-size: 24pt;
+  }
+
+  #projects p {
+    font-size: 12pt;
+  }
+
+  #projects button {
+    font-size: 12pt;
   }
 }
 
