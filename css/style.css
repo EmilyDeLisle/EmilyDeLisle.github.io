@@ -213,7 +213,7 @@ hr.style-two {
 }
 
 #projects img {
-  width: 380px;
+  width: 370px;
   margin-bottom: 0.25em;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
   border-radius: 7px;
@@ -296,7 +296,7 @@ hr.style-two {
 /* Contact */
 
 #contact .container{
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
 }
 
@@ -305,7 +305,14 @@ hr.style-two {
 }
 
 #contact a {
-  font-size: 20pt;
+  font-size: 16pt;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #contact a {
+    font-size: 20pt;
+  }
 }
 
 /* Footer */
