@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Roboto:400,700" rel="stylesheet">
     <title>mle - Emily DeLisle</title>
   </head>
   <body>
@@ -28,90 +29,128 @@
     <section id="title">
       <div class="jumbotron">
         <div>
-          <h1 class="display-4">Hi! My name<br/>is Emily DeLisle.</h1>
+          <h1 class="display-4">Hi! My name<br/>is <span id="bigName">Emily DeLisle</span>.</h1>
           <p class="lead">I'm a computing student, currently enrolled at the British Columbia Insitute of Technology in the Computer Systems Technology program.</p>
           <!--Anchor for the about section-->
           <span id="aboutAnchor"></span>
         </div>
       </div>
+
     </section>
     
     <section id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <img id="photo" class="img-fluid" src="./imgs/emily01.jpg">
+            <img id="photo" class="img-fluid" src="./imgs/emily03.jpg">
           </div>
           <div class="col-md-6">
             <h2>About</h2>
-            <p>Invent the universe circumnavigated kindling the energy hidden in matter cosmos inconspicuous motes of rock and gas extraordinary claims require extraordinary evidence. The sky calls to us Sea of Tranquility from which we spring hydrogen atoms intelligent beings encyclopaedia galactica? Across the centuries the only home we've ever known hundreds of thousands globular star cluster the only home we've ever known another world. At the edge of forever another world two ghostly white figures in coveralls and helmets are soflty dancing hearts of the stars gathered by gravity dream of the mind's eye.</p>
-
-            <p>With pretty stories for which there's little good evidence concept of the number one are creatures of the cosmos rings of Uranus rich in mystery Vangelis. The sky calls to us a mote of dust suspended in a sunbeam laws of physics venture a mote of dust suspended in a sunbeam invent the universe. Intelligent beings a very small stage in a vast cosmic arena bits of moving fluff made in the interiors of collapsing stars two ghostly white figures in coveralls and helmets are soflty dancing a mote of dust suspended in a sunbeam.</p>
+            <p>I've taken a meandering path to becoming a developer. I've been a 3D artist, graphic designer, cook, illustrator, and most recently, a hospital pharmacy technician.</p>
+            <p>While pharmacy has been a rewarding career for the last few years, I found that I needed something a little more fast-paced and where I could constantly be learning new things. I tried my hand at learning to code on my own as I have always been a technical-minded person. I found I needed more structure, and so I dove headfirst into the Computer Systems Technology program at BCIT. It's been challenging, but very rewarding, as I have learned a ton in a very short amount of time.</p>
+            <p>Aside from my work and studies, here are a few more tidbits about me:</p>
+            <ul>
+              <li>I love video games.</li>
+              <li>I'm an avid reader of science fiction and fantasy novels (I love the Expanse!).</li>
+              <li>I have my Advanced Open Water Diver PADI certification.</li>
+              <li>I collect and care for houseplants (Mostly successfully).</li>
+              <li>I am owned by a 155-gram white-bellied caique parrot named Griffin.</li>
+            </ul>
           </div>
         </div>
         <div class="row technologies">
-          <div class="col-sm-3"><img class="img-fluid" src="./imgs/html.png" alt="HTML"></div>
-          <div class="col-sm-3"><img class="img-fluid" src="./imgs/css.png" alt="CSS"></div>
-          <div class="col-sm-3"><img class="img-fluid" src="./imgs/js.png" alt="JS"></div>
-          <div class="col-sm-3"><img class="img-fluid" src="./imgs/bootstrap.png" alt="Bootstrap"></div>
+          <div class="col-sm-3" id="htmlImage">
+            <img class="img-fluid" src="./imgs/html.png" alt="HTML">
+            <div class="techName">HTML</div>
+          </div>
+          <div class="col-sm-3" id="cssImage">
+            <img class="img-fluid" src="./imgs/css.png" alt="CSS" id="cssImage">
+            <div class="techName" id="cssName">CSS</div>
+          </div>
+          <div class="col-sm-3" id="jsImage">
+            <img class="img-fluid" src="./imgs/js.png" alt="JS">
+            <div class="techName">JavaScript</div>
+          </div>
+          <div class="col-sm-3" id="bsImage">
+            <img class="img-fluid" src="./imgs/bootstrap.png" alt="Bootstrap">
+            <div class="techName">Bootstrap</div>
+          </div>
         </div>
         <div class="row technologies">
-          <div class="col-sm-4"><img class="img-fluid" src="./imgs/jquery.png" alt="jQuery"></div>
-          <div class="col-sm-4"><img class="img-fluid" src="./imgs/java.png" alt="Java"></div>
-          <div class="col-sm-4"><img class="img-fluid" src="./imgs/ps.png" alt="Photoshop"></div>
+          <div class="col-sm-4" id="jqImage">
+            <img class="img-fluid" src="./imgs/jquery.png" alt="jQuery">
+            <div class="techName">jQuery</div>
+          </div>
+          <div class="col-sm-4" id="javaImage">
+            <img class="img-fluid" src="./imgs/java.png" alt="Java">
+            <div class="techName">Java</div>
+          </div>
+          <div class="col-sm-4" id="psImage">
+            <img class="img-fluid" src="./imgs/ps.png" alt="Photoshop">
+            <div class="techName">Photoshop</div>
+          </div>
         </div>
       </div>
     </section>
     <!--Anchor for the contact section-->
     <span id="projectsAnchor"></span>
-    <hr/>
+    <hr class="style-two">
 
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
-        <!-- <div class="row">
-          <div class="col-sm-4 project" id="project1"><img src="./imgs/medManager.png" alt="MedManager" class="img-fluid"></div>
-          <div class="col-sm-4 project" id="project2">PlantPal</div>
-          <div class="col-sm-4 project" id="project3"><img src="./imgs/weather_app.png" alt="Weather App" class="img-fluid"></div>
-        </div>
         <div class="row">
-          <div class="col-sm-4 project" id="project4"><img src="./imgs/wikipedia_viewer.png" alt="Wikipedia Viewer" class="img-fluid"></div>
-          <div class="col-sm-4 project" id="project5"><img src="./imgs/random_quote.png" alt="Random Quote Generator" class="img-fluid"></div>
-          <div class="col-sm-4 project" id="project6">Project 6</div>
-          
-        </div> -->
-        <img src="./imgs/medManager.png" alt="MedManager" class="img-fluid">
-        <img src="./imgs/weather_app.png" alt="Weather App" class="img-fluid">
-        <img src="./imgs/wikipedia_viewer.png" alt="Wikipedia Viewer" class="img-fluid">
-        <img src="./imgs/random_quote.png" alt="Random Quote Generator" class="img-fluid">
+          <div class="col-lg-6" id="medImage">
+            <img src="./imgs/medManager.png" alt="MedManager">
+            <div class="projectInfo">
+              <h3>MedManager</h3>
+              <p>Collaborative student project. An app to manage daily medication dosing. Backed up by Firebase Realtime Database for user authentication and data management.</p>
+              <p><a href="https://medmanager-9a443.firebaseapp.com/" alt="MedManager" target="_blank"><button class="btn">View Project</button></a></p>
+              <p><a href="https://github.com/CiaraSouthgate/MedManager" alt="MedManager GitHub Repo" target="_blank"><i class="fab fa-github"></i></a></p>
+            </div>
+          </div>
+          <div class="col-lg-6" id="weatherImage">
+            <img src="./imgs/weather_app.png" alt="Weather App">
+            <div class="projectInfo">
+              <h3>Weather App</h3>
+              <p>Displays weather local to the user. Uses Google Geocoding and Dark Sky APIs to display the user's location and local weather.</p>
+              <p><a href="https://mle-weather.herokuapp.com/" alt="Weather App" target="_blank"><button class="btn">View Project</button></a></p>
+              <p><a href="https://github.com/EmilyDeLisle/Weather" alt="Weather App GitHub Repo" target="_blank"><i class="fab fa-github"></i></a></p>
+            </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-lg-6" id="wikiImage">
+            <img src="./imgs/wikipedia_viewer.png" alt="Wikipedia Viewer">
+            <div class="projectInfo">
+              <h3>Wikipedia Viewer</h3>
+              <p>Searches Wikipedia using user input and displays the first results. Also has a button that redirects to a random Wikipedia article.</p>
+              <p><a href="https://mle-wikipedia.herokuapp.com/" alt="Wikipedia Viewer" target="_blank"><button class="btn">View Project</button></a></p>
+              <p><a href="https://github.com/EmilyDeLisle/Wikipedia_Viewer" alt="Wikipedia Viewer GitHub Repo" target="_blank"><i class="fab fa-github"></i></a></p>
+            </div>
+          </div>
+          <div class="col-lg-6" id="randomImage">
+            <img src="./imgs/random_quote.png" alt="Random Quote Generator">
+            <div class="projectInfo">
+              <h3>Random Quote Generator</h3>
+              <p>Displays random quotes and lets users post the quotes to Twitter.</p>
+              <p><a href="https://emilydelisle.github.io/Random_Quote/" alt="Random Quote Generator" target="_blank"><button class="btn">View Project</button></a></p>
+              <p><a href="https://github.com/EmilyDeLisle/Random_Quote" alt="Random Quote Generator GitHub Repo" target="_blank"><i class="fab fa-github"></i></a></p>
+            </div>
+          </div>
+        </div>
       </div>
       
     </section>
     <!--Anchor for the contact section-->
     <span id="contactAnchor"></span>
-    <hr/>
+    <hr class="style-two">
 
     <section id="contact">
       <div class="container">
         <h2>Contact</h2>
-        <form name="contactform" method="post" action="scripts/contactengine.php">
-            <div class="form-group">
-              <label for="formName">Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
-            </div>
-            <div class="form-group">
-              <label for="formEmail">Email address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required="required">
-            </div>
-            <div class="form-group">
-              <label for="formMessage">Message</label>
-              <textarea class="form-control" id="message" rows="5" name="message" placeholder="Hello!" required="required"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" id="formSend">Send</button>
-            <button type="reset" class="btn" id="formReset">Reset</button>
-          </form>
-          
-          
+        <p>Want to chat?</p>
+        <a href="mailto:emily.delisle@gmail.com">emily.delisle@gmail.com</a>
       </div>
     </section>
 

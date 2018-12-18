@@ -1,10 +1,47 @@
 /* Overall styling */
+body {
+  /* background-color: #323232 !important; */
+  color: #FFF !important;
+  font-family: 'Roboto', sans-serif !important;
+  background: repeating-linear-gradient(
+  45deg,
+  #323232,
+  #323232 10px,
+  #353535 10px,
+  #353535 20px
+);
+}
+
 section {
   margin: 5em 0;
 }
 
 h2 {
   margin-bottom: 1em !important;
+  color: #EA1E5B !important;
+  font-family: 'Leckerli One', cursive !important;
+  font-size: 30pt !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+i {
+  font-size: 16pt !important;
+}
+
+a {
+  color: #FFF !important;
+  transition: 0.4s !important;
+}
+
+a:hover {
+  color: #43C66F !important;
+  text-decoration: none !important;
+}
+
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(234, 30, 91, 0.75), rgba(0, 0, 0, 0));
 }
 
 /* Navbar */
@@ -13,14 +50,51 @@ h2 {
 }
 
 #navbar {
-  background-color: rgba(248, 249, 250, 0.8) !important;
+  background-color: rgba(50, 50, 50, 0.8) !important;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px !important;
+  border-bottom: 3px solid #EA1E5B;
+}
+
+#navbar a {
+  color: #FFF;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-brand {
+  color: #EA1E5B !important;
+  font-family: 'Leckerli One', cursive !important;
+  font-size: 22pt !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar-brand:hover {
+  color: #EA1E5B !important;
+}
+
+.navbar-toggler {
+  outline: 0 !important;
+  background-color: #43C66F !important;
 }
 
 /* Jumbotron */
 .jumbotron {
   height: 100vh;
   position: relative;
+  background-image: url(/imgs/feathers2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFF;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px;
+}
+
+.jumbotron h1, .jumbotron p {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#bigName {
+  color: #EA1E5B;
+  font-size: 50pt;
+  font-family: 'Leckerli One', cursive;
 }
 
 #title {
@@ -28,8 +102,40 @@ h2 {
 }
 
 .jumbotron div {
-  width: 35em;
-  margin: 8em 0 0 10em;
+  width: 20em;
+  margin: 8em 0 0 2em;
+}
+
+.jumbotron div h1, #bigName {
+  font-size: 30pt;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .jumbotron div {
+    width: 28em;
+    margin: 8em 0 0 5em;
+  }
+
+  .jumbotron div h1 {
+    font-size: 40pt;
+  }
+
+  #bigName {
+    font-size: 45pt;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .jumbotron div {
+    width: 35em;
+    margin: 8em 0 0 10em;
+  }
+
+  #bigName {
+    font-size: 50pt;
+  }
 }
 
 /* About */
@@ -44,10 +150,8 @@ h2 {
 
 #photo {
   border-radius: 100%;
-}
-
-.col-sm-3, .col-sm-4 {
-  text-align: center;
+  border: 5px solid #EA1E5B;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
 }
 
 .col-sm-3 img, .col-sm-4 img {
@@ -59,8 +163,25 @@ h2 {
   margin-top: 2em;
 }
 
+.technologies div {
+  font-size: 14pt;
+}
+
 .technologies .img-fluid {
   margin-bottom: 1em;
+}
+
+.technologies .col-sm-3, .technologies .col-sm-4 {
+  position: relative;
+  text-align: center
+}
+
+.techName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 /* Projects */
@@ -81,11 +202,72 @@ h2 {
   text-align: center;
 }
 
+.projectImage {
+  position: relative;
+}
+
+.col-lg-6 {
+  margin-bottom: 2em;
+}
+
+#projects img {
+  border-radius: 7px;
+}
+
+.projectInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 20em;
+}
+
+#projects i {
+  font-size: 24pt;
+}
+
+#projects h3 {
+  color: #EA1E5B;
+  font-family: 'Leckerli One', cursive;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#projects button {
+  transition: 0.4s;
+}
+
+#projects button:hover {
+  background-color: #43C66F;
+  color: #FFF;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  div.container {
+    padding: 0;
+    /* margin: 0; */
+  }
+
+  #projects img {
+    width: 490px;
+  }
+}
+
 /* Contact */
 
 #contact .container{
   width: 50%;
   margin: 0 auto;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact a {
+  font-size: 20pt;
 }
 
 /* Footer */
