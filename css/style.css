@@ -213,7 +213,7 @@ hr.style-two {
 }
 
 #projects img {
-  width: 370px;
+  width: 340px;
   margin-bottom: 0.25em;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
   border-radius: 7px;
@@ -248,14 +248,15 @@ hr.style-two {
   color: #EA1E5B;
   font-family: 'Leckerli One', cursive;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  font-size: 18pt;
+  font-size: 14pt;
 }
 
 #projects p {
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 #projects button {
+  background-color: #FFF;
   transition: 0.4s;
   font-size: 10pt;
   margin: -0.8em 0;

@@ -100,6 +100,15 @@ $(document).ready(function() {
   );
 
   // Project Animations
+  $("#plantImage").hover(
+    function() {
+      $(this).children("div").fadeIn();
+      $(this).children("img").animate({opacity: "0.3"});},
+    function() {
+      $(this).children("div").fadeOut();
+      $(this).children("img").animate({opacity: "1"});}
+  );
+
   $("#medImage").hover(
     function() {
       $(this).children("div").fadeIn();
