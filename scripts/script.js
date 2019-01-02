@@ -81,6 +81,15 @@ $(document).ready(function() {
       $(this).children("img").animate({opacity: "1"});}
   );
 
+  $("#nodeImage").hover(
+    function() {
+      $(this).children("div").fadeIn();
+      $(this).children("img").animate({opacity: "0.3"});},
+    function() {
+      $(this).children("div").fadeOut();
+      $(this).children("img").animate({opacity: "1"});}
+  );
+
   $("#javaImage").hover(
     function() {
       $(this).children("div").fadeIn();
