@@ -80,7 +80,7 @@ hr.style-two {
 .jumbotron {
   height: 100vh;
   position: relative;
-  background-image: url(/imgs/feathers2.jpg);
+  background-image: url("/imgs/feathers2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
@@ -304,14 +304,14 @@ hr.style-two {
   text-align: center;
 }
 
-#contact a {
-  font-size: 16pt;
+.fa-envelope:before {
+  font-size: 24pt;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  #contact a {
-    font-size: 20pt;
+  .fa-envelope:before {
+    font-size: 48pt;
   }
 }
 

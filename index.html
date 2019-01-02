@@ -11,15 +11,15 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
-      <a class="navbar-brand" href="#title" id="navLink">mle</a>
+      <a class="navbar-brand pageNav" href="#title" id="navLink">mle</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#aboutAnchor" id="aboutLink">About</a>
-          <a class="nav-item nav-link" href="#projectsAnchor" id="projectsLink">Projects</a>
-          <a class="nav-item nav-link" href="#contactAnchor" id="contactLink">Contact</a>
+          <a class="nav-item nav-link pageNav" href="#aboutAnchor" id="aboutLink">About</a>
+          <a class="nav-item nav-link pageNav" href="#projectsAnchor" id="projectsLink">Projects</a>
+          <a class="nav-item nav-link pageNav" href="#contactAnchor" id="contactLink">Contact</a>
           <a class="nav-item nav-link" href="https://github.com/EmilyDeLisle" target="_blank"><i class="fab fa-github"></i></a>
           <a class="nav-item nav-link" href="https://www.linkedin.com/in/emily-delisle/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
@@ -59,37 +59,37 @@
           </div>
         </div>
         <div class="row technologies">
-          <div class="col-sm-3" id="htmlImage">
+          <div class="col-sm-3 hover" id="htmlImage">
             <img class="img-fluid" src="./imgs/html.png" alt="HTML">
             <div class="techName">HTML</div>
           </div>
-          <div class="col-sm-3" id="cssImage">
+          <div class="col-sm-3 hover" id="cssImage">
             <img class="img-fluid" src="./imgs/css.png" alt="CSS" id="cssImage">
             <div class="techName" id="cssName">CSS</div>
           </div>
-          <div class="col-sm-3" id="jsImage">
+          <div class="col-sm-3 hover" id="jsImage">
             <img class="img-fluid" src="./imgs/js.png" alt="JS">
             <div class="techName">JavaScript</div>
           </div>
-          <div class="col-sm-3" id="bsImage">
+          <div class="col-sm-3 hover" id="bsImage">
             <img class="img-fluid" src="./imgs/bootstrap.png" alt="Bootstrap">
             <div class="techName">Bootstrap</div>
           </div>
         </div>
         <div class="row technologies">
-          <div class="col-sm-3" id="jqImage">
+          <div class="col-sm-3 hover" id="jqImage">
             <img class="img-fluid" src="./imgs/jquery.png" alt="jQuery">
             <div class="techName">jQuery</div>
           </div>
-          <div class="col-sm-3" id="nodeImage">
+          <div class="col-sm-3 hover" id="nodeImage">
             <img class="img-fluid" src="./imgs/nodejs.png" alt="Node.js">
             <div class="techName">Node.js</div>
           </div>
-          <div class="col-sm-3" id="javaImage">
+          <div class="col-sm-3 hover" id="javaImage">
             <img class="img-fluid" src="./imgs/java.png" alt="Java">
             <div class="techName">Java</div>
           </div>
-          <div class="col-sm-3" id="psImage">
+          <div class="col-sm-3 hover" id="psImage">
             <img class="img-fluid" src="./imgs/ps.png" alt="Photoshop">
             <div class="techName">Photoshop</div>
           </div>
@@ -104,7 +104,7 @@
       <div class="container">
         <h2>Projects</h2>
         <div class="row">
-          <div class="col-lg-6" id="plantImage">
+          <div class="col-lg-6 hover" id="plantImage">
             <img src="./imgs/plantpal.png" alt="PlantPal">
             <div class="projectInfo">
               <h3>PlantPal</h3>
@@ -113,7 +113,7 @@
               <p><a href="https://github.com/EmilyDeLisle/PlantPal" alt="PlantPal GitHub Repo" target="_blank"><i class="fab fa-github"></i></a></p>
             </div>
           </div>
-          <div class="col-lg-6" id="medImage">
+          <div class="col-lg-6 hover" id="medImage">
             <img src="./imgs/medManager.png" alt="MedManager">
             <div class="projectInfo">
               <h3>MedManager</h3>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6" id="weatherImage">
+          <div class="col-lg-6 hover" id="weatherImage">
             <img src="./imgs/weather_app.png" alt="Weather App">
             <div class="projectInfo">
               <h3>Weather App</h3>
@@ -133,7 +133,7 @@
               <p><a href="https://github.com/EmilyDeLisle/Weather" alt="Weather App GitHub Repo" target="_blank"><i class="fab fa-github"></i></a></p>
             </div>
           </div>
-          <div class="col-lg-6" id="wikiImage">
+          <div class="col-lg-6 hover" id="wikiImage">
             <img src="./imgs/wikipedia_viewer.png" alt="Wikipedia Viewer">
             <div class="projectInfo">
               <h3>Wikipedia Viewer</h3>
@@ -144,7 +144,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12" id="randomImage">
+          <div class="col-lg-12 hover" id="randomImage">
             <img src="./imgs/random_quote.png" alt="Random Quote Generator">
             <div class="projectInfo">
               <h3>Random Quote Generator</h3>
@@ -164,8 +164,8 @@
     <section id="contact">
       <div class="container">
         <h2>Contact</h2>
-        <p>Want to chat?</p>
-        <a href="mailto:emily.delisle@gmail.com">emily.delisle@gmail.com</a>
+        <p>Want to chat? Email me!<br/>
+        <span id="envelope"><a href="mailto:emily.delisle@gmail.com"><i class="fas fa-envelope"></i></a></span></p>
       </div>
     </section>
 
